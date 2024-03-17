@@ -1,0 +1,4 @@
+[[redirects]]
+from = "/*"
+to = "/Alia.html"
+status = 200

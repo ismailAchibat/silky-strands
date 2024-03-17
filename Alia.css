@@ -1,0 +1,442 @@
+@import url('https://fonts.googleapis.com/css2?family=Poppins:ital,wght@0,100;0,200;0,300;0,400;0,500;0,600;0,700;0,800;0,900;1,100;1,200;1,300;1,400;1,500;1,600;1,700;1,800;1,900&display=swap');
+@font-face {
+    font-family: Dream;
+    src: url(dream.ttf.ttf);
+}
+
+html{
+    scroll-behavior: smooth;
+}
+
+*{
+    padding: 0;
+    margin: 0;
+    font-family: 'Dream';
+    box-sizing: border-box;
+}
+body{
+    background: #D9ACA9;    
+    color:azure;
+}
+
+#header{
+    width: 100%;
+    height: 100vh;
+}
+
+.header-box {
+    display: flex;
+    align-items: flex-end;
+}
+
+.girl-image img {
+    width: 140%; /* Make sure the image takes the full width of its container */
+    display: block; /* Remove any default image spacing */
+    margin-top: 100px;
+}
+
+.header-text {
+    margin-left: 80px; /* Adjust the margin as needed */
+}
+
+.header-text p{
+    margin-bottom: 200px;
+}
+
+nav{
+    display: flex;
+    align-items: center;
+    justify-content: space-between;
+    flex-wrap: wrap;
+    background-color: rgba(255, 255, 255, 0.9);
+    padding: 0 10%;
+}
+
+nav{
+    position: fixed;
+    width: 100%;
+    top: 0;
+    left: 0;
+    z-index: 1000; /* Adjust as needed */
+}
+
+.logo{
+    width: 200px;
+}
+
+nav ul li {
+    display: inline-block;
+    list-style: none;
+    margin: 10px 20px;
+    text-decoration: none;
+    color: #D9ACA9;
+    font-size: 50px;
+}
+
+nav ul li a{
+    color: #D9ACA9;
+    text-decoration: none;
+    font-size: 30px;
+    position: relative;
+    transition: 0.5s;
+}
+
+nav ul li a::after{
+    content: '';
+    width: 0;
+    height: 3px;
+    background: #D9ACA9;
+    right: 0;
+    bottom: -6px;
+    position: absolute;
+    transition: 0.5s;
+}
+
+nav ul li a:hover::after{
+    width: 100%;
+}
+
+
+.header-text{
+    font-size: 40px;
+    margin-top: 22%;
+    float: right;
+    margin-right: 80px;
+}
+
+.productsHeader {
+    font-size: 40px; 
+    color: #fff; 
+    text-align: center; 
+    margin-bottom: 200px;
+    margin-top: 200px; 
+}
+
+#products p span {
+    text-decoration: underline;
+}
+
+.shampoo {
+    display: flex;
+    align-items: center;
+    font-size: 29px;
+    margin-bottom: 120px;
+}
+
+.shampoo img {
+    flex: 0 0 5%;
+    border-radius: 25px;
+}
+
+.shampoo p {
+    flex: 1; 
+    margin-left: 20px; 
+    margin-right: 20px;
+}
+
+.conditioner {
+    display: flex;
+    align-items: center;
+    flex-direction: row-reverse; 
+    font-size: 29px;
+    margin-bottom: 120px;
+}
+
+.conditioner img {
+    flex: 0 0 30%;
+    margin-left: 20px; 
+    border-radius: 25px;
+}
+
+.conditioner p {
+    flex: 1;
+    margin-left: 40px;
+    
+}
+
+.cream {
+    display: flex;
+    align-items: center;
+    font-size: 29px;
+    margin-bottom: 120px;
+}
+
+.cream img {
+    flex: 0 0 5%;
+    border-radius: 25px;
+}
+
+.cream p {
+    flex: 1; 
+    margin-left: 20px; 
+    margin-right: 20px;
+}
+
+.mask {
+    display: flex;
+    align-items: center;
+    flex-direction: row-reverse; 
+    font-size: 29px;
+    margin-bottom: 120px;
+}
+
+.mask img {
+    flex: 0 0 30%;
+    margin-left: 20px;
+    border-radius: 25px;
+}
+
+.mask p {
+    flex: 1;
+    margin-left: 40px;
+}
+
+.shampoo img,
+.cream img{
+    width: 25%; /* Adjust the percentage value to make the images smaller */
+    border-radius: 25px;
+    margin-left: 40px;
+    transition: 0.5s;
+}
+
+.conditioner img,
+.mask img{
+    width: 30%;
+    max-width: 350px; /* Adjust the max-width to make sure it doesn't exceed a specific size */
+    margin-right: 40px;
+    transition: 0.5s;
+}
+
+.shampoo img:hover,
+.conditioner img:hover,
+.cream img:hover,
+.mask img:hover{
+    transform: translateY(-15px);
+}
+
+/*............contact...........*/
+
+#Contact{
+    color: #ffffff;
+    background-color: #B98682;
+}
+
+.row{
+    padding: 50px 10%;
+    width: 100%;
+    display: flex;
+    justify-content: space-between;
+}
+
+.Contact-left {
+    flex-basis: 35%;
+}
+
+.Contact-right {
+    flex-basis: 60%;
+    padding-left: 200px;
+}
+
+.Contact-me{
+    font-size: 70px;
+    color: #D0B4B3;
+    margin-bottom: 20px;
+}
+
+.email {
+    display: flex;
+    align-items: center;
+    font-size: 22px;
+    margin-bottom: 10px;
+}
+
+.email ion-icon {
+    margin-right: 10px;
+}
+
+
+.socials{
+    display: flex;
+    font-size: 30px;
+    color: #ffffff;
+}
+
+.instagram ion-icon{
+    margin-right: 10px;
+    color: #fff;
+    transition: 0.5s;
+}
+
+.instagram a {
+    text-decoration: none;
+    color: #fff;
+}
+
+.instagram ion-icon:hover {
+    transform: translateY(-5px);
+    color: #D0B4B3;
+}
+
+.tiktok ion-icon{
+    margin-right: 10px;
+    color: #fff;
+    transition: 0.5s;
+}
+
+.tiktok a {
+    text-decoration: none;
+    color: #fff;
+}
+
+.tiktok ion-icon:hover {
+    transform: translateY(-5px);
+    color: #D0B4B3;
+}
+
+.linkedin ion-icon{
+    margin-right: 10px;
+    color: #fff;
+    transition: 0.5s;
+}
+
+.linkedin a {
+    text-decoration: none;
+    color: #fff;
+}
+
+.linkedin ion-icon:hover {
+    transform: translateY(-5px);
+    color: #D0B4B3;
+}
+
+.submit-button{
+    background-color: #D0B4B3; /* Green */
+    border: none;
+    color: white;
+    padding: 16px 32px;
+    text-align: center;
+    text-decoration: none;
+    display: inline-block;
+    font-size: 16px;
+    margin: 4px 2px;
+    transition-duration: 0.4s;
+    cursor: pointer;
+}
+  
+.submit-button {
+    background-color: #D0B4B3; 
+    color: #fff; 
+    border: 2px solid #D0B4B3;
+    border-radius: 15px;
+    font-size: 20px;
+    font-weight: 500;
+}
+
+.submit-button:hover {
+    background-color: #fff;
+    color: #D0B4B3;
+}
+
+.Contact-right form{
+    width: 100%;
+    
+}
+
+form input, form textarea {
+    width: 100%;
+    border: 0;
+    outline: none;
+    background: #D0B4B3;
+    padding: 18px;
+    margin: 15px 0;
+    color: #fff;
+    font-size: 18px;
+    border-radius: 10px;
+    resize: none;
+    
+}
+
+/*---------------phone version--------------*/
+
+@media only screen and (max-width: 600px) {
+    body {
+        font-size: 16px; /* Adjust font size for better readability on smaller screens */
+    }
+
+    #header {
+        text-align: center;
+    }
+
+    .logo{
+        margin-bottom: 1%;
+    }
+
+    .container {
+        padding: 20px;
+    }
+
+    nav {
+        display: flex;
+        flex-direction: column;
+        align-items: center;
+    }
+
+    nav a {
+        margin-bottom: 10px;
+    }
+
+    nav ul {
+        display: none;
+    }
+
+    .header-text p {
+        font-size: 23px; /* Adjust font size for better readability on smaller screens */
+    }
+
+    #products h1.productsHeader {
+        font-size: 25px; /* Adjust font size for better readability on smaller screens */
+    }
+
+    .shampoo, .conditioner, .cream, .mask {
+        margin-bottom: 90px;
+    }
+
+    .shampoo p, .conditioner p, .cream p, .mask p {
+        font-size: 14px; /* Adjust font size for better readability on smaller screens */
+    }
+
+    .product-name{
+        font-size: 17px;
+        color: #D9ACA9;
+    }
+
+    .row {
+        flex-direction: column;
+        padding: 30px 5%;
+    }
+
+    .Contact-left,
+    .Contact-right {
+        flex-basis: 100%;
+        padding-left: 0;
+    }
+
+    .Contact-me {
+        font-size: 40px;
+    }
+
+    .Contact-left {
+        margin-bottom: 20px;
+    }
+
+    .Contact-right{
+        margin-bottom: 250px;
+    }
+    
+
+    .header-text {
+        margin-top: 200px; /* Adjust the margin as needed */
+    }
+
+    
+}
